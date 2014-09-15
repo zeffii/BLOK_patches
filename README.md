@@ -1,4 +1,16 @@
-BLOK_patches
+BLOKpatches
 ============
 
-patches of Blok Modular sorted by type
+Patches for Blok Modular sorted by type.
+
+#### types
+
+- Synth
+    - stab
+    - pluck
+    - pad
+    - lead
+
+- perc
+    - hat
+    - kick
