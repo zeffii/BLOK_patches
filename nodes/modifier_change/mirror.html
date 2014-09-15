@@ -1,0 +1,405 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Mirror &mdash; Sverchok 0.4.0 documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="Sverchok 0.4.0 documentation" href="../../index.html"/>
+        <link rel="up" title="Modifier Change" href="modifier_change.html"/>
+        <link rel="next" title="Modifier Make" href="../modifier_make/modifier_make.html"/>
+        <link rel="prev" title="Scale" href="scale.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../main.html" class="fa fa-home"> Sverchok</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../installation.html#troubleshooting-installation-errors">Troubleshooting Installation Errors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../geometry.html">Introduction to geometry</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../geometry.html#basics">Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../geometry.html#d-geometry">3D Geometry</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../nodes.html">Nodes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../basic_view/basic_view.html">Basic View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basic_data/basic_data.html">Basic Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basic_debug/basic_debug.html">Basic Debug</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../list_main/list_main.html">List Main</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../list_struct/list_struct.html">List Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../number/number.html">Number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../generator/generator.html">Generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vector/vector.html">Vector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../matrix/matrix.html">Matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modifier_change.html">Modifier Change</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modifier_make/modifier_make.html">Modifier Make</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analyzer/analyzer.html">Analyzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../beta/stethoscope.html">Beta</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute.html">Contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contribute.html#our-workflow">OUR WORKFLOW:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contribute.html#what-not-to-do">WHAT NOT TO DO:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contribute.html#to-make-your-node">TO MAKE YOUR NODE:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contribute.html#some-rules">SOME RULES:</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../main.html">Sverchok</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../main.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../../nodes.html">Nodes</a> &raquo;</li>
+      
+          <li><a href="modifier_change.html">Modifier Change</a> &raquo;</li>
+      
+    <li>Mirror</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="../../_sources/nodes/modifier_change/mirror.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            
+  <div class="section" id="mirror">
+<h1>Mirror<a class="headerlink" href="#mirror" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="functionality">
+<h2>Functionality<a class="headerlink" href="#functionality" title="Permalink to this headline">¶</a></h2>
+<p>This node is used to make general mirroring over geometry. It works directly over vertices, not with matrixes. It offers 3 different types of mirror:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="21%" />
+<col width="79%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Axis Rotation</td>
+<td>Based on axis (X, Y, Z) and a rotation angle (W)</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="27%" />
+<col width="73%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Type of Rotation</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Vertex Mirror</td>
+<td>Based on one single point</td>
+</tr>
+<tr class="row-odd"><td>Axis Mirror</td>
+<td>Mirror around an axis defined by two points</td>
+</tr>
+<tr class="row-even"><td>Plane Mirror</td>
+<td>Mirror over a plane given by a matrix</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="vertex-mirror">
+<h2>Vertex Mirror<a class="headerlink" href="#vertex-mirror" title="Permalink to this headline">¶</a></h2>
+<p>This mode let us define a center point and a make mirror of the incoming Vertices</p>
+<div class="section" id="inputs">
+<h3>Inputs<a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h3>
+<p>All inputs are vectorized and they will accept single or multiple values.
+There is two inputs:</p>
+<ul class="simple">
+<li><strong>Vertices</strong></li>
+<li><strong>Vert A</strong></li>
+</ul>
+</div>
+<div class="section" id="parameters">
+<h3>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h3>
+<p>Defult value for <strong>Vert A</strong> is equal to <tt class="docutils literal"><span class="pre">(0.0,</span> <span class="pre">0.0,</span> <span class="pre">0.0)</span></tt>. Vertices need an input.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="15%" />
+<col width="17%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Param</th>
+<th class="head">Type</th>
+<th class="head">Default</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>Vertices</strong></td>
+<td>Vertices</td>
+<td>none</td>
+<td>vertices to mirror</td>
+</tr>
+<tr class="row-odd"><td><strong>Vert A</strong></td>
+<td>Vertices</td>
+<td>(0.0, 0.0, 0.0)</td>
+<td>center of the mirroring</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="outputs">
+<h3>Outputs<a class="headerlink" href="#outputs" title="Permalink to this headline">¶</a></h3>
+<p>Only <strong>Vertices</strong> will be generated. Depending on the type of the inputs, if they have more than one object, then more objects will be outputted.</p>
+</div>
+<div class="section" id="example-of-usage">
+<h3>Example of usage<a class="headerlink" href="#example-of-usage" title="Permalink to this headline">¶</a></h3>
+<img alt="VertexMirrorDemo1.PNG" src="https://cloud.githubusercontent.com/assets/5990821/4220321/a14a9c58-3900-11e4-8f98-a30dbe7a8b34.png" />
+<p>In this example we use Vertex mirror to mirroring an arbitrary shape. As you can see every point goes through the center point.</p>
+</div>
+</div>
+<div class="section" id="axis-mirror">
+<h2>Axis Mirror<a class="headerlink" href="#axis-mirror" title="Permalink to this headline">¶</a></h2>
+<p>This mode is used to make mirroring around an axis defined by two vertices.</p>
+<div class="section" id="id1">
+<h3>Inputs<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>All inputs are vectorized and they will accept single or multiple values.
+There is three inputs:</p>
+<ul class="simple">
+<li><strong>Vertices</strong></li>
+<li><strong>Vert A</strong></li>
+<li><strong>Vert B</strong></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h3>Parameters<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>There is default values for <strong>Vert A</strong> and <strong>vert B</strong>. <strong>Vertices</strong> need an input.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="15%" />
+<col width="17%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Param</th>
+<th class="head">Type</th>
+<th class="head">Default</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>Vertices</strong></td>
+<td>Vertices</td>
+<td>none</td>
+<td>vertices to mirror</td>
+</tr>
+<tr class="row-odd"><td><strong>Vert A</strong></td>
+<td>Vertices</td>
+<td>(0.0, 0.0, 0.0)</td>
+<td>first point to define the axis</td>
+</tr>
+<tr class="row-even"><td><strong>Vert B</strong></td>
+<td>Vertices</td>
+<td>(1.0, 0.0, 0.0)</td>
+<td>second point to define the axis</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id3">
+<h3>Outputs<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Only <strong>Vertices</strong> will be generated. Depending on the type of the inputs, if one or more inputs have multiple values, then more objects will be mirrored.</p>
+</div>
+<div class="section" id="id4">
+<h3>Example of usage<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<img alt="AxisMirrorDemo1.PNG" src="https://cloud.githubusercontent.com/assets/5990821/4220319/a1340b8c-3900-11e4-93f6-d78e458c77d4.png" />
+<p>We define an axis with two vertices and use them to make a mirror. All the points reflect through the chosen axis.</p>
+</div>
+</div>
+<div class="section" id="plane-mirror">
+<h2>Plane Mirror<a class="headerlink" href="#plane-mirror" title="Permalink to this headline">¶</a></h2>
+<p>This is the most common method of mirroring. We&#8217;ll use a plane defined by a matrix.</p>
+<div class="section" id="id5">
+<h3>Inputs<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>All inputs are vectorized and they will accept single or multiple values.
+There is two inputs:</p>
+<ul class="simple">
+<li><strong>Vertices</strong></li>
+<li><strong>Plane</strong></li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h3>Parameters<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>Plane has a defult value, but Vertices need an input.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="15%" />
+<col width="17%" />
+<col width="52%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Param</th>
+<th class="head">Type</th>
+<th class="head">Default</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>Vertices</strong></td>
+<td>Vertices</td>
+<td>none</td>
+<td>vertices to mirror</td>
+</tr>
+<tr class="row-odd"><td><strong>Plane</strong></td>
+<td>Matrix</td>
+<td>Identity</td>
+<td>matrix to define the mirror plane</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id7">
+<h3>Outputs<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Only <strong>Vertices</strong> will be generated. Depending on the type of the inputs, if one or more planes are defined, then more objects will be mirrored.</p>
+</div>
+<div class="section" id="id8">
+<h3>Example of usage<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<img alt="PlaneMirrorDemo1.PNG" src="https://cloud.githubusercontent.com/assets/5990821/4220320/a13edcd8-3900-11e4-9ae6-088583f7560c.png" />
+<p>In this last case we just mirror the shape over the selected plane, defined by a matrix.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../modifier_make/modifier_make.html" class="btn btn-neutral float-right" title="Modifier Make">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="scale.html" class="btn btn-neutral" title="Scale"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014, nortikin.
+    </p>
+  </div>
+
+  <a href="https://github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.4.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
