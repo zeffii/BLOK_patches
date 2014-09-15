@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no" ?>
+<storables>
+    <BLOCK ID="1" TYPE="2" X="36" Y="80" POS="0" P0="0.000000" P1="0.166667" P2="0.000000" P3="0.000000" />
+    <BLOCK ID="3" TYPE="4" X="251" Y="37" POS="1" P0="0.698333" P1="1.000000" P2="0.000000" />
+    <BLOCK ID="5" TYPE="0" X="692" Y="107" POS="2" P0="0.927083" />
+    <CONNECTION ID="8" FROM="1" TO="2" INPUTID="0" />
+    <BLOCK ID="15" TYPE="26" X="65" Y="16" POS="3" P0="0.550001" P1="0.503882" />
+    <CONNECTION ID="17" FROM="0" TO="3" INPUTID="0" />
+    <CONNECTION ID="18" FROM="3" TO="1" INPUTID="0" />
+    <BLOCK ID="19" TYPE="2" X="245" Y="121" POS="4" P0="0.000000" P1="0.833333" P2="0.239583" P3="0.427083" />
+    <CONNECTION ID="21" FROM="4" TO="1" INPUTID="1" />
+</storables>

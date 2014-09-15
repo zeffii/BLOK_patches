@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no" ?>
+<storables>
+    <BLOCK ID="1" TYPE="2" X="21" Y="26" POS="0" P0="0.000000" P1="0.440000" P2="0.122500" P3="0.607500" />
+    <BLOCK ID="3" TYPE="4" X="329" Y="41" POS="1" P0="0.065000" P1="0.500000" P2="0.000000" />
+    <BLOCK ID="5" TYPE="0" X="646" Y="31" POS="2" P0="0.755000" />
+    <CONNECTION ID="7" FROM="0" TO="1" INPUTID="1" />
+    <BLOCK ID="9" TYPE="2" X="20" Y="143" POS="3" P0="0.000000" P1="0.205000" P2="0.060000" P3="0.182500" />
+    <BLOCK ID="12" TYPE="6" X="203" Y="138" POS="4" P0="0.152500" />
+    <CONNECTION ID="14" FROM="3" TO="4" INPUTID="0" />
+    <CONNECTION ID="15" FROM="4" TO="1" INPUTID="0" />
+    <BLOCK ID="16" TYPE="6" X="500" Y="54" POS="5" P0="1.000000" />
+    <CONNECTION ID="18" FROM="1" TO="5" INPUTID="0" />
+    <CONNECTION ID="19" FROM="5" TO="2" INPUTID="0" />
+    <BLOCK ID="20" TYPE="1" X="470" Y="154" POS="6" P0="0.037500" P1="0.277500" P2="0.000000" />
+    <CONNECTION ID="22" FROM="1" TO="6" INPUTID="0" />
+    <CONNECTION ID="24" FROM="3" TO="6" INPUTID="1" />
+    <BLOCK ID="25" TYPE="6" X="578" Y="118" POS="7" P0="0.695000" />
+    <CONNECTION ID="27" FROM="6" TO="7" INPUTID="0" />
+    <CONNECTION ID="28" FROM="7" TO="2" INPUTID="0" />
+</storables>

@@ -1,0 +1,37 @@
+ Volume in drive C is OS
+ Volume Serial Number is 0AFE-FCE0
+
+ Directory of C:\buzeMUSIC\blok\BLOK_bank_by_zeffii\BLOK patches by zeffii\Tonal
+
+26/10/2009  15:13    <DIR>          .
+26/10/2009  15:13    <DIR>          ..
+24/10/2009  17:55             9,206 Blok_On_Roids.bmx
+24/10/2009  14:14            20,640 crazytrance.bmx
+26/10/2009  15:13                 0 dirlist.txt
+15/10/2009  17:31             7,607 flange_stab.blkx
+10/10/2009  14:39             2,547 oberheim2.blkx
+09/10/2009  22:49             2,839 OBERHEIM_01.blkx
+07/10/2009  13:44             3,061 obesity_08.blkx
+25/10/2009  23:25            14,822 tranquility.bmx
+15/10/2009  22:06            13,768 v38_stgr_5thdetune.blkx
+16/10/2009  20:25             1,331 v39_strangePAD.blkx
+17/10/2009  20:57             6,936 v44_cid_Monophonic.blkx
+18/10/2009  22:54             3,920 v46_1Log.blkx
+18/10/2009  21:17             4,563 v46_noPWM2.blkx
+21/10/2009  17:21             3,599 v50_unManheim_dubstab_02.blkx
+25/10/2009  23:31            11,335 v52_danqual.blkx
+25/10/2009  23:37            11,335 v52_empty.blkx
+26/10/2009  00:39            11,335 v52_moogish_short.blkx
+26/10/2009  00:58            15,653 v52_moogish_short_low.blkx
+23/10/2009  16:53             3,418 v52_pad_fauxverb.blkx
+25/10/2009  22:12             5,401 v52_short_verheijstab.blkx
+23/10/2009  17:07             9,695 v52_sparta.bmx
+25/10/2009  22:56             8,191 v52_too_close_to_the_tram.blkx
+25/10/2009  23:29            11,335 v52_tranquality.blkx
+24/10/2009  17:53             2,866 v52_warmStab.blkx
+24/10/2009  19:42             9,569 v53_808snare.blkx
+24/10/2009  19:21             9,223 v53_bd_at_c-5.blkx
+24/10/2009  19:28            12,921 v53_cenv_bd.blkx
+24/10/2009  20:00            69,314 v53_voltage_controlled.bmx
+              28 File(s)        286,430 bytes
+               2 Dir(s)  119,859,163,136 bytes free
