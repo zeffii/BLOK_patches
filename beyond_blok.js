@@ -69,6 +69,7 @@ function draw_content(data) {
   bp.append("rect")
     .style(rect_style)
     .style('fill', function(d){
+      if (d.toLowerCase().indexOf('readme') > -1)  return "#b2fc9b"
       if (d.toLowerCase().indexOf('pad') > -1)  return "#ee5355"
       if (d.toLowerCase().indexOf('lead') > -1)  return "#ee52bf"
       if (d.toLowerCase().indexOf('stab') > -1)  return "#51d5ef"
