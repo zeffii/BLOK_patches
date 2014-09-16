@@ -1,7 +1,10 @@
 #display{
     height: 830px;
     width: 900px;
+    font-family: 'Raleway', sans-serif;
 }
+
+
 
 .background{
   visibility: visible !important;
