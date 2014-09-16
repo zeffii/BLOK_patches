@@ -39,6 +39,18 @@ var text_style = {
 var y_pos = 44;
 var x_pos = 120;
 
+function get_color(d) {
+  if (d.toLowerCase().indexOf('readme') > -1)  return "#b2fc9b"
+  if (d.toLowerCase().indexOf('pad') > -1)  return "#ee5355"
+  if (d.toLowerCase().indexOf('lead') > -1)  return "#ee52bf"
+  if (d.toLowerCase().indexOf('stab') > -1)  return "#51d5ef"
+  if (d.toLowerCase().indexOf('bd') > -1)  return "#ca7777"
+  if (d.toLowerCase().indexOf('perc') > -1)  return "#59b9be"
+  if (d.toLowerCase().indexOf('tonal') > -1)  return "#487971"
+  if (d.indexOf('unsorted') > -1)  return "#edfafb"
+  return '#342'
+}
+
 function draw_content(data) {
        
   var sg = blok_patches.append("g")
@@ -68,21 +80,10 @@ function draw_content(data) {
   // for each patch group make a rect
   bp.append("rect")
     .style(rect_style)
-    .style('fill', function(d){
-      if (d.toLowerCase().indexOf('readme') > -1)  return "#b2fc9b"
-      if (d.toLowerCase().indexOf('pad') > -1)  return "#ee5355"
-      if (d.toLowerCase().indexOf('lead') > -1)  return "#ee52bf"
-      if (d.toLowerCase().indexOf('stab') > -1)  return "#51d5ef"
-      if (d.toLowerCase().indexOf('bd') > -1)  return "#ca7777"
-      if (d.toLowerCase().indexOf('perc') > -1)  return "#59b9be"
-      if (d.toLowerCase().indexOf('tonal') > -1)  return "#487971"
-      if (d.indexOf('unsorted') > -1)  return "#edfafb"
-      return '#342'
-    })
+    .style('fill', function(d){ return get_color(d) })
     .attr({
         "height": psize*downscale,
         "width": psize*downscale
-        //"id": function(d){ return d.gistid }
     })
 
   // for each patch group make a text label
@@ -97,27 +98,26 @@ function draw_content(data) {
       "transform": function(d, i){ 
           var xy = get_pos((num_patches-1)-i);
         return translate(-xy[0], -xy[1]-10)}
-    
     })
 
   
   // attach mouse behaviour
   bp.each(function(d){
     var obj = d3.select(this);
+    var r = obj.select('rect');
     
     obj.on("mouseover", function(d){
-      //obj.style("fill", "#33A9CE")
-      //obj.style("stroke-width", 0.8 + "px")
+      r.transition().duration(200).style("fill", "yellow")
       var label = obj.select('.patch_label')
       label.transition().duration(200).attr({'opacity':1.0})      
     })
     obj.on("mouseout", function(d){
-      //obj.transition().duration(200).style(rect_style)
+      var col2 = get_color(d)
+      r.transition().duration(200).style("fill", col2)      
       var label = obj.select('.patch_label')
       label.transition().duration(100).attr({'opacity':0.0})
     })
   })
-  
 
 
 }
