@@ -86,7 +86,9 @@ function draw_content(data) {
 
   // for each patch group make a text label
   bp.append("text")
-    .text(function(d){ return d})
+    .text(function(d){ 
+      return d.replace(/\\/g, "  \\  ");
+    })
     .classed("patch_label", true)
       .style(text_style)
     .attr({
