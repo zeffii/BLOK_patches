@@ -105,16 +105,14 @@ function draw_content(data) {
   bp.each(function(d){
     var obj = d3.select(this);
     var r = obj.select('rect');
-    
+    var label = obj.select('.patch_label');
+
     obj.on("mouseover", function(d){
       r.transition().duration(200).style("fill", "yellow")
-      var label = obj.select('.patch_label')
-      label.transition().duration(200).attr({'opacity':1.0})      
+      label.transition().duration(200).attr({'opacity':1.0})
     })
     obj.on("mouseout", function(d){
-      var col2 = get_color(d)
-      r.transition().duration(200).style("fill", col2)      
-      var label = obj.select('.patch_label')
+      r.transition().duration(200).style("fill", get_color(d))
       label.transition().duration(100).attr({'opacity':0.0})
     })
   })
