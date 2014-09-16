@@ -10,11 +10,11 @@ prefix = "https://raw.githubusercontent.com/zeffii/BLOK_patches/master/";
 d3.json("cardamon.json", function(data) {
     data = data;
     draw_content()
+    num_patches = data.images.length;
+    items_wide = Math.floor(Math.sqrt(num_patches));
 });
 
 
-num_patches = data.images.length;
-items_wide = Math.floor(Math.sqrt(num_patches));
 
 psize = 50;
 downscale = 0.988;
