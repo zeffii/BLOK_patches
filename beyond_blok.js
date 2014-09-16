@@ -11,7 +11,8 @@ d3.json("cardamon.json", function(data) {
     data = data;
     num_patches = data.images.length;
     items_wide = Math.floor(Math.sqrt(num_patches));
-    draw_content()
+    console.log(num_patches)
+    draw_content(data)
 });
 
 
@@ -38,7 +39,7 @@ var text_style = {
 var y_pos = 44;
 var x_pos = 120;
 
-function draw_content() {
+function draw_content(data) {
        
   var sg = blok_patches.append("g")
     .classed("solo_group", true)
