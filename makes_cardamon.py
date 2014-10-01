@@ -25,6 +25,8 @@ for dir_, _, files in os.walk(rootDir):
         relDir = os.path.relpath(dir_, rootDir)
         relFile = os.path.join(relDir, fileName)
         if not relFile.startswith('.'):
+            if not (relFile.endswith('.blkx') or relFile.endswith('.md')):
+                continue
             fileSet.add(relFile)
 
 
