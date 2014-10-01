@@ -15,8 +15,12 @@
     "2014\\synth\\pad\\zef274_ton_WarmAnalog2.blkx", 
     "2014\\synth\\pluck\\zef282_ton_pluckedmonk.blkx", 
     "2014\\synth\\stab\\1998_dtch.blkx", 
+    "2014\\synth\\stab\\detune_nice)percsyn_Stab.blkx", 
     "2014\\synth\\stab\\neatly.blkx", 
     "2014\\synth\\stab\\nicedeep_moog.blkx", 
+    "2014\\synth\\stab\\phaaaaat_analogueik_stab_bass.blkx", 
+    "2014\\synth\\stab\\semi_piano_001.blkx", 
+    "2014\\synth\\stab\\stab_mowgish_screechersubdued.blkx", 
     "2014\\synth\\stab\\synth_stab_understone_3way.blkx", 
     "2014\\synth\\stab\\synth_svelt_moog7.blkx", 
     "2014\\synth\\stab\\ton_cute_moog.blkx", 
@@ -43,11 +47,7 @@
     "Vintage\\Percussion\\v53_BD_cenv.blkx", 
     "Vintage\\Percussion\\v53_Snare_808.blkx", 
     "Vintage\\Percussion\\v53_bd_at_c-5.blkx", 
-    "Vintage\\Tonal\\Blok_On_Roids.bmx", 
-    "Vintage\\Tonal\\crazytrance.bmx", 
-    "Vintage\\Tonal\\dirlist", 
-    "Vintage\\Tonal\\dirlist.txt", 
-    "Vintage\\Tonal\\tranquility.bmx", 
+    "Vintage\\Tonal\\nice_detuneoscs.blkx", 
     "Vintage\\Tonal\\v38_stgr_5thdetune.blkx", 
     "Vintage\\Tonal\\v39_strangePAD.blkx", 
     "Vintage\\Tonal\\v44_cid_Monophonic.blkx", 
@@ -65,12 +65,10 @@
     "Vintage\\Tonal\\v52_obesity_08.blkx", 
     "Vintage\\Tonal\\v52_pad_fauxverb.blkx", 
     "Vintage\\Tonal\\v52_short_verheijstab.blkx", 
-    "Vintage\\Tonal\\v52_sparta.bmx", 
     "Vintage\\Tonal\\v52_too_close_to_the_tram.blkx", 
     "Vintage\\Tonal\\v52_tranquality.blkx", 
     "Vintage\\Tonal\\v52_uno_java80_phat.blkx", 
     "Vintage\\Tonal\\v52_warmStab.blkx", 
-    "Vintage\\Tonal\\v53_voltage_controlled.bmx", 
     "Vintage\\soundFX\\v52_Noise_Keytracked_4x.blkx", 
     "Vintage\\soundFX\\v52_Noise_Keytracked_4x2.blkx", 
     "Vintage\\unsorted\\166_Perc_BD_easy2_mo.blkx", 
@@ -197,8 +195,6 @@
     "Vintage\\unsorted\\v52_fauxverb_pad_dist.blkx", 
     "Vintage\\unsorted\\v52_perc_BD_detroit_boom.blkx", 
     "Vintage\\unsorted\\v52_perc_HH_interestingclick.blkx", 
-    "Vintage\\unsorted\\v52_perc_HH_interestingclick_02.blkx"]
-   
+    "Vintage\\unsorted\\v52_perc_HH_interestingclick_02.blkx"
+  ]
 }
-
-  
